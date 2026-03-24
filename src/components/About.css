@@ -1,0 +1,144 @@
+.about {
+  width: 100%;
+  padding: 100px 60px;
+  background-color: rgb(241, 223, 223);
+  color: black;
+  scroll-margin-top: 80px; 
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  gap: 90px;              
+  align-items: center;
+}
+
+
+/* Left Image */
+.about-image img {
+  width: 100%;
+  max-width: 520px;      
+  height: 350px;          
+
+  object-fit: cover;
+  border-radius: 25px;
+  border: 3px solid #f4c430;
+}
+
+
+/* Right Content */
+.about-content h1 {
+  color: black;
+  font-weight: bold;
+  font-size: 36px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-left: 2px;
+  position: relative;       
+  display: inline-block;    
+  margin-bottom: 20px;
+  
+}
+
+.about-content h1::after {
+  content: "";
+  position: absolute;
+  left: 35%;
+  bottom: -6px;
+  width: 70px;              /* short underline */
+  height: 3px;
+  background-color: black; /* golden color */
+  border-radius: 2px;
+}
+.about-content h6 {
+  font-size: 36px;
+  margin: 10px 0 20px;
+  color: #a9830f;
+  font-size: 14px;
+}
+
+.about-content p {
+  font-size: 16px;
+  line-height: 1.7;
+  max-width: 500px;
+}
+
+/* Stats Cards */
+.about-stats {
+  display: flex;
+  gap: 20px;
+  margin-top: 35px;
+}
+
+.stat-card {
+  background-color: #111;
+  padding: 25px 30px;
+  border-radius: 18px;
+  text-align: center;
+  min-width: 160px;
+
+  border: 1px solid transparent;
+  border-bottom: 3px solid #f4c430;
+
+  transition: 
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border 0.35s ease;
+}
+
+/* Hover IN */
+.stat-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(231, 175, 6, 0.35);
+  border: 1px solid #f4c430;
+}
+
+
+.stat-card h4 {
+  font-size: 28px;
+  color: #f4c430;
+}
+
+.stat-card p {
+  font-size: 14px;
+  margin-top: 5px;
+  color: white;
+}
+
+
+
+/* 
+   Responsive
+ */
+
+@media (max-width: 992px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-content p {
+    margin: auto;
+  }
+
+  .about-stats {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 576px) {
+  .about {
+    padding: 80px 25px;
+  }
+
+  .about-content h3 {
+    font-size: 28px;
+  }
+
+  .stat-card {
+    min-width: 130px;
+  }
+}

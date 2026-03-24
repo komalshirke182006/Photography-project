@@ -1,0 +1,106 @@
+.hero {
+  width: 100vw;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-image 1s ease-in-out;
+}
+
+
+/* Overlay */
+.hero-overlay {
+  padding: 40px 60px;
+  text-align: center;
+  color: #fff;
+  max-width: 90%;
+}
+
+/* Text */
+.hero-overlay h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero-overlay p {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.hero-overlay button {
+  padding: 12px 30px;
+  font-size: 16px;
+  background-color: #f4c430;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 50px;
+}
+
+.hero-overlay button:hover {
+  background-color: #d9ad28;
+
+}
+
+/*
+   Responsive Adjustments
+ */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .hero {
+    min-height: 90vh;
+  }
+
+  .hero-overlay h1 {
+    font-size: 40px;
+  }
+
+  .hero-overlay p {
+    font-size: 18px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hero {
+    min-height: 85vh;
+  }
+
+  .hero-overlay {
+    padding: 30px 25px;
+  }
+
+  .hero-overlay h1 {
+    font-size: 32px;
+  }
+
+  .hero-overlay p {
+    font-size: 16px;
+  }
+
+  .hero-overlay button {
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .hero {
+    min-height: 80vh;
+  }
+
+  .hero-overlay h1 {
+    font-size: 26px;
+  }
+
+  .hero-overlay p {
+    font-size: 15px;
+  }
+}

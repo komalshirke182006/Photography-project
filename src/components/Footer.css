@@ -1,0 +1,144 @@
+.footer {
+  background: linear-gradient(180deg, #0b0f1a, #05070d);
+  color: #ccc;
+  padding: 60px 8% 25px;
+}
+
+/* GRID */
+.footer-container {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 45px;
+}
+
+/* ABOUT */
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #caa846;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.footer-logo img {
+  width: 40px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.footer-about p {
+  font-size: 14px;
+  line-height: 1.7;
+  max-width: 90%;
+}
+
+/* SOCIAL ICONS */
+.footer-socials {
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.footer-socials a {
+  width: 36px;
+  height: 36px;
+  background: #caa846;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+
+.footer-socials a:hover {
+  background: #fff;
+}
+
+/* HEADINGS */
+.footer-links h3 {
+  color: #fff;
+  margin-bottom: 18px;
+  position: relative;
+  display: inline-block;
+}
+
+.footer-links h3::after {
+  content: "";
+  width: 35px;
+  height: 2px;
+  background: #caa846;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+}
+
+/* LINKS */
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-links li::before {
+  content: "•";
+  color: #caa846;
+  font-size: 18px;
+}
+
+.footer-links a,
+.footer-links li {
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.footer-links a:hover,
+.footer-links li:hover {
+  color: #caa846;
+}
+
+/* BOTTOM */
+.footer-bottom {
+  border-top: 1px solid #222;
+  margin-top: 45px;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.footer-bottom span {
+  color: #caa846;
+  display: block;
+  margin-top: 6px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-links h3::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .footer-links li {
+    justify-content: center;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
+}
